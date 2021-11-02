@@ -12602,7 +12602,7 @@ button {
 
 /* Card Icon Info*/
 .card-icon-info > i {
-  color: #4c84ff;
+  color: white;
   font-size: 1.56rem;
   display: inline-block;
 }

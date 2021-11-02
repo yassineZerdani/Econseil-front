@@ -11,13 +11,13 @@ import ReactPaginate from 'react-paginate';
 const DocumentsAnnex = (props) => {
 
     /* Get documents */
-    
+
     useEffect(() => {
-    
+
         props.getData()
         const { documents } = props
-            
-    },[]);
+
+    }, []);
 
     const { documents } = props
 
@@ -29,7 +29,7 @@ const DocumentsAnnex = (props) => {
     const [pageNumber, setPageNumber] = useState(0);
 
     /*--------*/
-    
+
     /* Pager */
 
     const documentsPerPage = 7;
@@ -57,7 +57,7 @@ const DocumentsAnnex = (props) => {
         return (
             <tr key={key} >
                 <td>
-                    <a href={document[1]} download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7"/>&nbsp;&nbsp;{document[0].attributes.title}</a>
+                    <a href={document[1]} download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7" />&nbsp;&nbsp;{document[0].attributes.title}</a>
                 </td>
                 <td></td>
                 <td></td>
@@ -79,20 +79,38 @@ const DocumentsAnnex = (props) => {
                         </div>
                         <div className="search-box">
                             <button className="btn-search"><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon></button>
-                            <input type="text" className="input-search" placeholder="Rechercher..." onChange={event => { setSearchTerm(event.target.value) }}/>
+                            <input type="text" className="input-search" placeholder="Rechercher..." onChange={event => { setSearchTerm(event.target.value) }} />
                         </div>
                         <div className="table-wrapper">
-                            <table id="ActeurInterneTableId" className="fl-table" >
+                            <table >
                                 <thead>
                                     <tr>
-                                        <th>Document</th>
-                                        <th>Référence</th>
-                                        <th>Type</th>
-                                        <th>Date de publication</th>
+                                        <th scope="col">Document</th>
+                                        <th scope="col">Référence</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Date de publication</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {displayDocuments}
+                                    <tr>
+                                        <td data-label="Document:"><a download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7" />&nbsp;&nbsp;doc1</a></td>
+                                        <td data-label="Référence:"> reference chi le3ba</td>
+                                        <td data-label="Type:">type chi le3ba</td>
+                                        <td data-label="Date de publication:">7/8/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Document:"><a download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7" />&nbsp;&nbsp;doc1</a></td>
+                                        <td data-label="Référence"> reference chi le3ba</td>
+                                        <td data-label="Type:">type chi le3ba</td>
+                                        <td data-label="Date de publication:">7/8/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Document:"><a download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7" />&nbsp;&nbsp;doc1</a></td>
+                                        <td data-label="Référence:"> reference chi le3ba</td>
+                                        <td data-label="Type:">type chi le3ba</td>
+                                        <td data-label="Date de publication:">7/8/2020</td>
+                                    </tr>
+
                                 </tbody>
                                 <ReactPaginate
                                     previousLabel={'<'}
@@ -119,7 +137,7 @@ const DocumentsAnnex = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        documents: state.documents.documents 
+        documents: state.documents.documents
     }
 }
 export default connect(mapStateToProps, { getData })(DocumentsAnnex);

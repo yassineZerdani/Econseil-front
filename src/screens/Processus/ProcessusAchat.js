@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { getOneProcess } from '../../redux/procmets/action';
 import { getProcedure } from '../../redux/procorgs/action';
 import ReactPaginate from 'react-paginate';
+import {useState} from 'react'
 
 
 const ProcessusAchat = () => {
@@ -37,10 +38,7 @@ const ProcessusAchat = () => {
   const docsCount = Math.ceil(Proc.documents.length/elementsPerPage);
   const procCount = Math.ceil(Proc.procedures.length/elementsPerPage);
 
-  const changePage = ({selected}) => {
-      setPageNumber(selected);
-  };
-
+ 
   /*-------*/
 
   const dispatch = useDispatch();

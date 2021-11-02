@@ -138,13 +138,13 @@ const Home = (props) => {
               <div className="card-header justify-content-between">
                 <h2>DERNIÈRES PUBLICATIONS</h2>
               </div>
-              <div className="card-body pt-0 pb-5">
-                <table className="table card-table table-responsive table-responsive-large" style={{ width: '100%' }}>
+              <div className="table-wrapper">
+                <table>
                   <thead>
-                    <tr style={{ borderBottom: '1px solid grey' }}>
-                      <th style={{ color: '#349BEB' }}>PROCÉDURE</th>
-                      <th style={{ color: '#349BEB' }}>PROCESSUS DE RATTACHEMENT</th>
-                      <th style={{ color: '#349BEB' }}>DATE DE PUBLICATION</th>
+                    <tr >
+                      <th>PROCÉDURE</th>
+                      <th >PROCESSUS DE RATTACHEMENT</th>
+                      <th>DATE DE PUBLICATION</th>
                     </tr>
                   </thead>
                   <tbody>

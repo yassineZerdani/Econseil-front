@@ -20,11 +20,7 @@ import OperationActeurs from './screens/Procedure/OperationActeurs';
 
 function App() {
 
-  const token = localStorage.getItem('token');
-
-  if(!token) {
-    return <Login />
-  }
+  
 
   return (
     <Router>
