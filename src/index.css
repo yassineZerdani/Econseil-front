@@ -28,7 +28,7 @@
   --dark: #1b223c;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 873px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1500px;
@@ -561,7 +561,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
@@ -1127,7 +1127,7 @@ pre code {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .col-md {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -2371,7 +2371,7 @@ pre code {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 872.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -3748,7 +3748,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .dropdown-menu-md-left {
     right: auto;
     left: 0;
@@ -5030,7 +5030,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 872.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
     padding-right: 0;
@@ -5038,7 +5038,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .navbar-expand-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6317,7 +6317,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .list-group-horizontal-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -7783,7 +7783,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .d-md-none {
     display: none !important;
   }
@@ -8351,7 +8351,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .flex-md-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -9023,7 +9023,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .float-md-left {
     float: left !important;
   }
@@ -10028,7 +10028,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .m-md-0 {
     margin: 0 !important;
   }
@@ -11466,7 +11466,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .text-md-left {
     text-align: left !important;
   }
@@ -13145,7 +13145,7 @@ div.copied {
   background: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .navbar .search-form {
     padding-left: 0;
   }
@@ -13391,7 +13391,7 @@ div.copied {
   right: -75px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .navbar .navbar-right .navbar-nav .notifications-menu > .dropdown-menu {
     width: 300px;
     right: 0px;
@@ -13406,7 +13406,7 @@ div.copied {
   border-color: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .navbar .dropdown-menu {
     width: 250px;
   }
@@ -13511,13 +13511,13 @@ div.copied {
 }
 
 /* Header Fix */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .header-fixed .page-wrapper {
     padding-top: 4.875rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .header-fixed .page-wrapper .main-header {
     position: fixed;
   }
@@ -13602,7 +13602,7 @@ div.copied {
           transform: translateX(-250px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .left-sidebar {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -13641,7 +13641,7 @@ div.copied {
   margin-top: 1.9rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar .sidebar-inner {
     margin-top: 1rem;
   }
@@ -13739,7 +13739,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .app-brand a {
     overflow: hidden;
   }
@@ -13897,7 +13897,7 @@ div.copied {
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar {
     width: 75px;
     -webkit-transition: width .3s ease-in;
@@ -13905,7 +13905,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar .app-brand .brand-name {
     visibility: hidden;
     opacity: 0;
@@ -13914,7 +13914,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-minified .left-sidebar .app-brand .brand-name {
     -webkit-transition: none;
     transition: none;
@@ -13931,7 +13931,7 @@ div.copied {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar .nav > li > a > .caret,
   .sidebar-minified .left-sidebar .nav > li > a > span {
     opacity: 0;
@@ -13958,7 +13958,7 @@ div.copied {
   opacity: 0;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 872.98px) {
   .sidebar-minified .left-sidebar .nav li.has-sub.expand .collapse > .sub-menu {
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
@@ -13968,7 +13968,7 @@ div.copied {
   }
 }
 
-@media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
+@media (max-width: 872.98px) and (prefers-reduced-motion: reduce) {
   .sidebar-minified .left-sidebar .nav li.has-sub.expand .collapse > .sub-menu {
     -webkit-transition: none;
     transition: none;
@@ -13979,13 +13979,13 @@ div.copied {
   border-top-width: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar .sidebar-footer {
     height: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar .sidebar-footer-content {
     visibility: hidden;
     opacity: 0;
@@ -13993,7 +13993,7 @@ div.copied {
 }
 
 /* Sidebar Minified Hover */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar:hover {
     width: 250px;
     margin-right: -10.94rem;
@@ -14062,7 +14062,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar:hover .app-brand .brand-name {
     opacity: 1;
     visibility: visible;
@@ -14080,7 +14080,7 @@ div.copied {
   border-top-width: 1px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified .left-sidebar:hover .sidebar-footer {
     height: -webkit-min-content;
     height: -moz-min-content;
@@ -14103,7 +14103,7 @@ div.copied {
 }
 
 /* Sidebar Minified Not transition */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified:not(.left-sidebar) .left-sidebar {
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
@@ -14127,7 +14127,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-static.sidebar-minified.header-fixed .page-wrapper .main-header {
     padding-left: 4.69rem;
   }
@@ -14158,7 +14158,7 @@ div.copied {
 }
 
 /* Sidebar Fixed With Minified Layout Container */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed.sidebar-minified .page-wrapper {
     padding-left: 4.69rem;
     -webkit-transition: padding-left 0.3s ease-in-out;
@@ -14166,14 +14166,14 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-fixed.sidebar-minified .page-wrapper {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed.sidebar-minified.header-fixed .page-wrapper .main-header {
     padding-left: 4.69rem;
     -webkit-transition: padding-left 0.3s ease-in-out;
@@ -14181,7 +14181,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-fixed.sidebar-minified.header-fixed .page-wrapper .main-header {
     -webkit-transition: none;
     transition: none;
@@ -14203,7 +14203,7 @@ div.copied {
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-minified-out .left-sidebar {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -14302,7 +14302,7 @@ div.copied {
 }
 
 /* Sidebar Fixed And Offcanvas */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed-offcanvas .left-sidebar,
   .sidebar-fixed .left-sidebar {
     position: fixed;
@@ -14314,21 +14314,21 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed-offcanvas .page-wrapper,
   .sidebar-fixed .page-wrapper {
     padding-left: 15.6rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed-offcanvas .main-header,
   .sidebar-fixed .main-header {
     padding-left: 15.6rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed-offcanvas.header-static .main-header,
   .sidebar-fixed.header-static .main-header {
     padding-left: 0;
@@ -14339,13 +14339,13 @@ div.copied {
   padding-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed-offcanvas.sidebar-collapse .sidebar-footer {
     left: -250px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-fixed-offcanvas.sidebar-collapse-out .sidebar-footer {
     left: 0px;
     -webkit-transition: left 0.3s ease-in-out;
@@ -14353,7 +14353,7 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-fixed-offcanvas.sidebar-collapse-out .sidebar-footer {
     -webkit-transition: none;
     transition: none;
@@ -14361,7 +14361,7 @@ div.copied {
 }
 
 /* Sidebar Collapse */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-collapse .left-sidebar {
     margin-left: -15.6rem;
     -webkit-transition: margin-left 0.3s ease-in-out;
@@ -14369,21 +14369,21 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-collapse .left-sidebar {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-collapse .page-wrapper {
     -webkit-transition: padding-left 0.3s ease-in-out;
     transition: padding-left 0.3s ease-in-out;
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-collapse .page-wrapper {
     -webkit-transition: none;
     transition: none;
@@ -14391,7 +14391,7 @@ div.copied {
 }
 
 /* Sidebar Out Collapse */
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-collapse-out .left-sidebar {
     margin-left: 0px;
     -webkit-transition: margin-left 0.3s ease-in-out;
@@ -14399,21 +14399,21 @@ div.copied {
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-collapse-out .left-sidebar {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-collapse-out .page-wrapper {
     -webkit-transition: padding-left 0.3s ease-in-out;
     transition: padding-left 0.3s ease-in-out;
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+@media (min-width: 873px) and (prefers-reduced-motion: reduce) {
   .sidebar-collapse-out .page-wrapper {
     -webkit-transition: none;
     transition: none;
@@ -14451,14 +14451,14 @@ div.copied {
   height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-static .sidebar.sidebar-with-footer .slimScrollDiv,
   .sidebar-static-offcanvas .sidebar.sidebar-with-footer .slimScrollDiv {
     height: auto !important;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .sidebar-static.header-fixed .main-header,
   .sidebar-static-offcanvas.header-fixed .main-header {
     padding-left: 15.6rem;
@@ -14485,7 +14485,7 @@ div.copied {
   z-index: 1045;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 873px) {
   .mobile-sticky-body-overlay {
     display: none;
   }

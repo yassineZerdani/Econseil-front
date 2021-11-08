@@ -9,7 +9,7 @@ const OrganigrammeGeneral = () => {
         <div>
             <h5 className="vde">Organigramme général</h5>
 
-            <div style={{marginLeft: '1.7%'}} className="veBtnContainer" role="group">
+            <div  className="veBtnContainer" role="group">
                 <button type="button" className="btn btn-icon" onclick="ZoomIn(1)">
                     <FontAwesomeIcon icon={faSearchPlus}></FontAwesomeIcon>
                 </button>
@@ -27,7 +27,7 @@ const OrganigrammeGeneral = () => {
                 </button>
             </div>
             <div>
-            <img src="assets/images/93bf9d395db42247_c_fa10fac95ff2442d.png" alt="../images/93bf9d395db42247_c_fa10fac95ff2442d.png" usemap="#FA10FAC95FF2442D" border="0" style={{marginLeft: '45%', marginTop: '10%'}}/>
+            <img className="OGimg" src="assets/images/93bf9d395db42247_c_fa10fac95ff2442d.png" alt="../images/93bf9d395db42247_c_fa10fac95ff2442d.png" usemap="#FA10FAC95FF2442D" border="0" />
             </div>
         </div>
     )

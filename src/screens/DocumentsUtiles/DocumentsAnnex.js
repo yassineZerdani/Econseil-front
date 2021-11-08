@@ -82,7 +82,7 @@ const DocumentsAnnex = (props) => {
                             <input type="text" className="input-search" placeholder="Rechercher..." onChange={event => { setSearchTerm(event.target.value) }} />
                         </div>
                         <div className="table-wrapper">
-                            <table >
+                            <table className="da-table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Document</th>
@@ -101,6 +101,12 @@ const DocumentsAnnex = (props) => {
                                     <tr>
                                         <td data-label="Document:"><a download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7" />&nbsp;&nbsp;doc1</a></td>
                                         <td data-label="Référence"> reference chi le3ba</td>
+                                        <td data-label="Type:">type chi le3ba</td>
+                                        <td data-label="Date de publication:">7/8/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Document:"><a download="document.txt"><img src="/images/extr.ico.gif" class="pd-b-7" />&nbsp;&nbsp;doc1</a></td>
+                                        <td data-label="Référence:"> reference chi le3ba</td>
                                         <td data-label="Type:">type chi le3ba</td>
                                         <td data-label="Date de publication:">7/8/2020</td>
                                     </tr>

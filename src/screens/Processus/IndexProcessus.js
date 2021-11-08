@@ -99,7 +99,7 @@ const IndexProcessus = (props) => {
                             <input type="text" className="input-search" placeholder="Rechercher..." onChange={event => {setSearchTerm(event.target.value);}}/>
                         </div>
                         <div className="table-wrapper">
-                            <table id="ActeurInterneTableId" className="fl-table" >
+                            <table id="ActeurInterneTableId" className="da-table" >
                                 <thead>
                                     <tr>
                                         <th className="wd-15p">code</th>
