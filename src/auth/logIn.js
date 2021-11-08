@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function logIn(credentials) {
     return axios.post(
-      "http://econseil.dd:8083/user/login?_format=json",
+      "https://econseil.dd:8083/user/login?_format=json",
       JSON.stringify({
         'name': credentials.username,
         'pass': credentials.password
