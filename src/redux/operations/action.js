@@ -19,7 +19,7 @@ export const getOperations = () => async dispatch => {
 
         response.data.included.map(file => {
 
-            if (order.relationships.field_organisation.data.id == ID) {
+            if (order.relationships.field_organisme.data.id == ID) {
 
                 for (let i = 0; i < documentsIndex; i++) {
 

@@ -17,7 +17,7 @@ export const getData = () => async dispatch => {
     response.data.data.forEach( order => {
         console.log(order)
         response.data.included.forEach( file => {
-            if( order.relationships.field_organisation.data.id == ID){
+            if( order.relationships.field_organisme.data.id == ID){
             if ( file.id === order.relationships.field_document.data.id ){
     
                 axios.get('http://econseil.dd:8083/jsonapi/file/file/'+file.relationships.field_media_document.data.id)

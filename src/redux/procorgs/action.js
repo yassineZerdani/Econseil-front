@@ -22,7 +22,7 @@ export const getProcedures = () => async dispatch => {
 
         response.data.included.map(file => {
 
-            if (order.relationships.field_organisation.data.id == ID) {
+            if (order.relationships.field_organisme.data.id == ID) {
 
 
                 if (file.id === order.relationships.field_proc_org_proc_metier.data.id || file.id === undefined) {
@@ -77,7 +77,7 @@ export const getProcedure = (identifier) => async dispatch => {
 
         response.data.included.map(file => {
 
-            if (order.relationships.field_organisation.data.id == ID) {
+            if (order.relationships.field_organisme.data.id == ID) {
 
                 for (let i = 0; i < docIndex; i++) {
 

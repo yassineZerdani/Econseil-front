@@ -5,7 +5,7 @@ export const getActors = () => async dispatch => {
 
     const ID = await localStorage.getItem('user');
 
-    const response = await axios.get('http://econseil.dd:8083/jsonapi/node/acteur?include=field_acteurs_acteur_parent,field_acteur_operations,field_acteur_proc_orgs,field_acteur_sous_acteurs,field_acteur_profil');
+    const response = await axios.get('http://econseil.dd:8083/jsonapi/node/acteur?include=field_acteur_parent,field_acteur_operations,field_acteur_proc_orgs,field_sous_acteurs,field_acteur_profile');
 
     console.log(response)
 
@@ -21,24 +21,24 @@ export const getActors = () => async dispatch => {
         actor['childs'] = [];
         actor['parent'] = {nom: "", id: ""};
 
-        var childsIndex = element.relationships.field_acteur_sous_acteurs.data.length;
+        var childsIndex = element.relationships.field_sous_acteurs.data.length;
 
         response.data.included.map(file => {
 
-            if (element.relationships.field_organisation.data.id == ID) {
+            if (element.relationships.field_organisme.data.id == ID) {
 
 
                 for (let i = 0; i < childsIndex; i++) {
 
-                    if ((file.id === element.relationships.field_acteur_sous_acteurs.data[i].id)) {
+                    if ((file.id === element.relationships.field_sous_acteurs.data[i].id)) {
 
                         actor.childs.push({nom: file.attributes.title, id: file.id, type: file.attributes.field_type_acteur});
 
                     }
                 }
 
-                if (element.relationships.field_acteurs_acteur_parent.data != null) {
-                    if (file.id === element.relationships.field_acteurs_acteur_parent.data.id || file.id === undefined) {
+                if (element.relationships.field_acteur_parent.data != null) {
+                    if (file.id === element.relationships.field_acteur_parent.data.id || file.id === undefined) {
 
                         actor.parent.nom = file.attributes.title;
                         actor.parent.id = file.id;
@@ -66,7 +66,7 @@ export const getActor = (identifier) => async dispatch => {
 
     const ID = await localStorage.getItem('user');
 
-    const response = await axios.get('http://econseil.dd:8083/jsonapi/node/acteur/' + identifier + '?include=field_acteurs_acteur_parent,field_acteur_operations,field_acteur_proc_orgs,field_acteur_sous_acteurs,field_acteur_profil');
+    const response = await axios.get('http://econseil.dd:8083/jsonapi/node/acteur/' + identifier + '?include=field_acteur_parent,field_acteur_operations,field_acteur_proc_orgs,field_sous_acteurs,field_acteur_profile');
 
     console.log(response)
 
@@ -88,12 +88,12 @@ export const getActor = (identifier) => async dispatch => {
 
     var proceduresIndex = element.relationships.field_acteur_proc_orgs.data.length;
     var operationsIndex = element.relationships.field_acteur_operations.data.length;
-    var childsIndex = element.relationships.field_acteur_sous_acteurs.data.length;
+    var childsIndex = element.relationships.field_sous_acteurs.data.length;
 
 
     response.data.included.map(file => {
 
-        if (element.relationships.field_organisation.data.id == ID) {
+        if (element.relationships.field_organisme.data.id == ID) {
 
             for (let i = 0; i < proceduresIndex; i++) {
 
@@ -118,7 +118,7 @@ export const getActor = (identifier) => async dispatch => {
 
             for (let i = 0; i < childsIndex; i++) {
 
-                if ((file.id === element.relationships.field_acteur_sous_acteurs.data[i].id)) {
+                if ((file.id === element.relationships.field_sous_acteurs.data[i].id)) {
 
                     actor.childs.push(file);
 
@@ -127,8 +127,8 @@ export const getActor = (identifier) => async dispatch => {
 
             }
 
-            if (element.relationships.field_acteurs_acteur_parent.data != null) {
-                if (file.id === element.relationships.field_acteurs_acteur_parent.data.id || file.id === undefined) {
+            if (element.relationships.field_acteur_parent.data != null) {
+                if (file.id === element.relationships.field_acteur_parent.data.id || file.id === undefined) {
 
                     actor.parent = file
 
